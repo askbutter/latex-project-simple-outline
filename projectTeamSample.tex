@@ -1,0 +1,105 @@
+\documentclass[12pt, A4]{article}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\usepackage{caption}
+\graphicspath{{/home/anna/Pictures/}}
+\usepackage{float}
+\usepackage{array}
+\usepackage{blindtext}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+
+\begin{center}
+  %Include our title
+  \section*{Design School Senior Group Project Name with AI/ML}
+
+  \large
+  \textbf{Course - 03 Spring 2023}
+
+\end{center}
+
+%Table Starts here
+\begin{figure}[H] %H = placing the figure exactly where it is instead of floating 
+  \centering
+  \minipage{0.3\textwidth} %group our images, no spaces
+  \centering
+  \captionsetup{justification=centering} %center caption if included
+  \includegraphics[width=40mm]{3.png} %img here n width
+  Name Name NAme% text instead of \caption{}
+  \endminipage\hfill
+  \minipage{0.3\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=40mm]{3.png}
+  Another Name
+  \endminipage\hfill
+  \minipage{0.3\textwidth}
+  \centering
+  \captionsetup{justification=centering}
+  \includegraphics[width=40mm]{3.png}
+  Another Name Name
+  \endminipage\hfill
+  \minipage{0.3\textwidth}
+  \centering
+  \vspace{5mm} % this spacing is here for the last img
+  \captionsetup{justification=centering}
+  \includegraphics[width=40mm]{3.png}
+  Another Name Name
+  \endminipage\hfill
+  
+\end{figure}
+
+\textbf{Team Members}
+\begin{table}[H] %table for our group memebers 
+  \centering
+  \setlength\extrarowheight{5pt}  % for a better look-ish
+  % set 4 cols size in {}
+  \noindent\makebox[\textwidth]{%
+\begin{tabular}{ | m{3.4cm} | m{3.2cm}| m{3cm} | m{5cm} | }
+    \hline
+   Group Member& Owner,Project Manager,Misc Coder.& xxx-xxx-xxxx& firslast@gmail.com \\ %"& creates signals next col, and \hline is new row, while \\ is new line"
+    \hline
+     Group Member& Developer& xxx-xxx-xxxx& firstlast@gmail.com \\
+     \hline
+     Group Member& Developer& xxx-xxx-xxx& firstlast@gmail.com \\
+      \hline
+      Group Member& Documentation, Researcher& xxx-xxx-xxx& firstlast@gmail.com \\
+      \hline
+      Group Advisor& Project Advisor& &\\
+      \hline
+
+\end{tabular}
+}
+
+\end{table}
+
+\vspace{38mm} %space until it reaches new page
+\textbf{Collaboration Tools:}\\ %\textbf makes text bold 
+Communication: Discord (Text), Teams (Call)\\ %this segment is simple text with "\\" to go to next line
+Collaboration: Github, Discord
+
+\vspace{5mm}
+
+\textbf{Overview / Abstract:}\\	
+\lipsum[1]
+
+\vspace{5mm}
+
+
+\textbf{Platform:}\\
+Platform that will be used to create project...\\
+Describe the platoform your team will be using.\\
+Or any hardware or software tools that will be included.
+
+\vspace{5mm}
+
+\textbf{Deliverables:}\\
+Goal of the project.\\
+State what the expected deliverables are.
+
+
+\end{document}
